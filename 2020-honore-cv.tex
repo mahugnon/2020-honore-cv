@@ -45,8 +45,8 @@
 \fi
 
 % Change the colours if you want to
-\definecolor{VividPurple}{HTML}{3E0097}
-\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{VividPurple}{HTML}{C71F02}
+\definecolor{SlateGrey}{HTML}{000000}
 \definecolor{LightGrey}{HTML}{666666}
 % \colorlet{name}{black}
 \colorlet{tagline}{VividPurple}
@@ -69,26 +69,27 @@
 \renewcommand{\ratingmarker}{\faCircle}
 
 %% sample.bib contains your publications
-\addbibresource{sample.bib}
+\addbibresource{publi.bib}
 
 \begin{document}
-\name{Marissa Mayer}
-\tagline{Business Woman \& Proud Geek}
+\name{HOUEKPETODJI  Honoré}
+\tagline{Ingénieur Logiciel}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 %% You can add multiple photos on the left or right
-\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+\photoR{2.5cm}{honorem}
 % \photoL{2cm}{Yacht_High,Suitcase_High}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{mmayer@yahoo-inc.com}
-%   \phone{000-00-0000}
-  \mailaddress{Address, Street, 00000 County}
-  \location{Sunnyvale, CA}
-  \homepage{marissamayr.tumblr.com}
-  \twitter{@marissamayer}
-  \linkedin{marissamayer}
-%   \github{github.com/mmayer} % I'm just making this up though.
+  \email{homahugnon@gmail.com}
+  \email{mahugnon.houekpetodji.etu@univ-lille.fr}
+\phone{+33601147224}
+  \mailaddress{02, Boulevard du docteur Calmette, 59800  France}
+  \location{Lille}
+%  \homepage{marissamayr.tumblr.com}
+%  \twitter{@marissamayer}
+  \linkedin{mahugnon HONORE}
+   \github{https://github.com/mahugnon} % I'm just making this up though.
 %   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
   % \orcid{0000-0000-0000-0000}
@@ -113,36 +114,44 @@
 % break across pages if things get too long.
 \begin{paracol}{2}
 
-\cvsection{Experience}
+\cvsection{Expérience}
 
-\cvevent{President \& CEO}{Yahoo!}{July 2012 -- Ongoing}{Sunnyvale, CA}
+\cvevent{Doctorant Génie Logiciel}{SA-CIM/RMod INRIA}{Mars 2019 -- En cours}{Villeneuve-d'ascq, France}
 \begin{itemize}
-\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
-\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
-\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
-\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+\item Mécanismes d'aide à la ré-ingénierie de système logiciel patrimonial
+\item Supervision de la mise en place de système de contrôle de version
 \end{itemize}
 
 \divider
 
-\cvevent{Vice President of Location \& Services}{Google}{Oct 2010 -- July 2012}{Palo Alto, CA}
+\cvevent{Étudiant-chercheur}{RMod INRIA}{Mars 2019 --En cours}{Villeneuve-d'ascq, France}
 \begin{itemize}
-\item Position Google Maps as the world leader in mobile apps and navigation
-\item Oversaw 1000+ engineers and product managers working on Google Maps, Google Places and Google Earth
+\item Création d'outils de ré-ingénierie logiciel
+\item Écriture de papiers
 \end{itemize}
 
 \divider
 
-\cvevent{Vice President of Search Products \& UX}{Google}{2005 --  2010}{Palo Alto, CA}
+\cvevent{Développeur Informatique}{UMR MoSAR INRA}{Avril 2018 -- Septembre 2018}{Paris, France}
+\begin{itemize}
+\item Développement de Simulateur du métabolisme chez la vache laitière
+\end{itemize}
 
 \divider
 
-\cvevent{Product Manager \& UI Lead}{Google}{Oct 2001 -- July 2005}{Palo Alto, CA}
-
+\cvevent{}{Educanet}{Juillet 2017 -- Septembre 2017}{Sousse, Tunisie}
 \begin{itemize}
-\item Appointed by the founder Larry Page in 2001 to lead the Product Management and User Interaction teams
-\item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, color schemes and pixel-by-pixel element alignment)
+\item Développement d'un système de suivi de production d'une machine de fabrication de câble
 \end{itemize}
+
+\divider
+
+\cvevent{}{Municipalité de Gabès}{Février 2016 -- Avril 2016}{Gabès, Tunisie}
+\begin{itemize}
+\item Développement d'un système de suivi de dettes de la municipalité de Gabès
+\end{itemize}
+
+
 
 % \divider
 
@@ -153,36 +162,12 @@
 % \item Developed targeted advertisement in order to use user's search queries and show them related ads
 % \end{itemize}
 
-\cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-% Some ad-hoc tweaking to adjust the labels so that they don't overlap
-\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-\wheelchart{1.5cm}{0.5cm}{%
-  10/13em/accent!30/Sleeping \& dreaming about work,
-  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-  20/11em/accent!40/Spending time with family,
-  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-  5/8em/accent!20/Baking cupcakes
-}
-
-% use ONLY \newpage if you want to force a page break for
-% ONLY the currentc column
+\
 \newpage
 
-\cvsection{Publications}
+\cvsection{Articles Soumis}
 
 \nocite{*}
-
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
 
 \divider
 
@@ -192,70 +177,58 @@
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{Life Philosophy}
+\cvsection{Philosophie de vie}
 \begin{quote}
-``If you don't have any shadows, you're not standing in the light.''
+``La chance est quand la préparation rencontre l'opportinuté''
 \end{quote}
 
-\cvsection{Most Proud of}
+\cvsection{Succès}
 
-\cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
+\cvachievement{\faTrophy}{Bourse d'étude de la coopération entre le Bénin et la Tunisie}
 
-\divider
+\cvsection{Compétences}
 
-\cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
+\cvtag{Travailleur (18/24)}
+\cvtag{JavaFx} 
+\cvtag{Java EE: Spring}\\
+\cvtag{Git}
+\cvtag{Docker}
+\cvtag{DevOps} \cvtag{R}\\
+\cvtag{Angular 8} \cvtag{SQL}\\
 
-\divider
 
-\cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
 
-\divider
+\cvsection{Langues}
 
-\cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
-
-\cvsection{Strengths}
-
-\cvtag{Hard-working (18/24)}
-\cvtag{Persuasive}\\
-\cvtag{Motivator \& Leader}
-
-\divider\smallskip
-
-\cvtag{UX}
-\cvtag{Mobile Devices \& Applications}
-\cvtag{Product Management \& Marketing}
-
-\cvsection{Languages}
-
-\cvskill{English}{5}
+\cvskill{Français}{5}
 % \divider
 
-\cvskill{Spanish}{4}
+\cvskill{Anglais}{4}
 % \divider
+\cvskill{Fun}{5}
 
-\cvskill{German}{3}
 
 
-\cvsection{Education}
+\cvsection{Fomation}
 
-\cvevent{M.S.\ in Computer Science}{Stanford University}{Sept 1997 -- June 1999}{}
+\cvevent{Master de Recherche en Informatique}{Université de Sousse  (ISSATso)}{Septembre 2016 -- Octobre 2018}{}
 
 \divider
 
-\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
+\cvevent{Licence Fondamentale\ en Informatique }{Université de Gabès (FSG)}{Septembre 2013 -- Juin 2016}{}
 
 \newpage
 
-\cvsection{Referees}
+\cvsection{Références}
 
 % \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
+\cvref{Dr.\ Nicolas Anquetil}{Université de Lille}{Nicolas.Anquetil@inria.fr}
+{42 Rue Paul Duez, 59000 Lille}
 
 \divider
 
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
+\cvref{Dr.\ Farouk CHÉRIF }{Université de Sousse}{faroukcheriff@yahoo.fr}
+{Rue Tahar Ben Achour, Sousse 4003}
 
 \end{paracol}
 
